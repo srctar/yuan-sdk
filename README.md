@@ -65,7 +65,7 @@ OR
 mvn clean source:jar deploy
 ```
 
-here is [release 0.10.1](https://github.com/srctar/yuan-sdk/releases/download/0.10.1/yuan-sdk-0.10.1.jar), **only use for have a look at how is compiles(may not work)**
+here is [release 0.10.1](https://github.com/srctar/yuan-sdk/releases/download/0.10.1/yuan-sdk-0.10.1.jar), **only for have a look at how is compiles(may not work on running)**
 
 ---
 
