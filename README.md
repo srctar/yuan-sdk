@@ -49,7 +49,7 @@ its name is `yuan-sdk`(**THIS PROJECT**)
 ## Step (使用步骤)
 > There are steps: **<font color='red'>A、B、C、D、E</font>**
 
-**<font color='red'>A</font>. clone this project, then compile it**
+**<font color='red'>A</font>. Clone this project, then compile it**
 ```
 git clone git@github.com:LianjiaTech/yuan-sdk.git
 ```
@@ -60,7 +60,9 @@ OR
 mvn clean source:jar deploy
 ```
 
-**<font color='red'>B</font>. import `yuan-sdk` into your project, or copy it into your classpath.**
+---
+
+**<font color='red'>B</font>. Import `yuan-sdk` into your project, or copy it into your classpath.**
 ```
 <dependency>
   <groupId>com.ke.yuan</groupId>
@@ -75,7 +77,9 @@ annotationProcessor "com.ke.yuan:yuan-sdk:0.10.1"
 ```
 **Notice**， `yuan-sdk` works on compile, you mush stay `yuan-sdk` on you classpath when you compile your project.
 
-**<font color='red'>C</font>. point annotation on your class、method.**
+---
+
+**<font color='red'>C</font>. Point annotation on your entrance class.**
 
 code access, *All the following can be done only once*:
 on `main` or `spring-boot` or `servlet` / `spring`
@@ -84,27 +88,28 @@ on `main` or `spring-boot` or `servlet` / `spring`
 
  - if you having only `main` in your application, use `@EnableYuan` On your main class。 just like:
  ```
- @EnableYuan
- public class Main {
-        public static void main(String[] args) {
-        }
- }
+@EnableYuan
+public class Main {
+    public static void main(String[] args) {
+    }
+}
  ```
  - if you are in a servlet environment, servlet SPI help you do everything, just enjoy it。
  - if you are in a Spring environment(include servlet), `com.ke.yuan.adaptor.SpringYuAnInitializer` should be 
  included into you Spring scan package.
  - if you are in a Spring Boot environment, use `@EnableSpringYuAn` On you main class
  ```
- @EnableYuan
- @SpringBootApplication
- public class Main {
-        public static void main(String[] args) {
-            SpringApplication.run(Main.class);
-        }
- }
+@EnableYuan
+@SpringBootApplication
+public class Main {
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class);
+    }
+}
  ```
- 
- **<font color='red'>D</font>. On your protected method, have `@YuanCallback` On it.**
+--- 
+
+**<font color='red'>D</font>. On your protected method, have `@YuanCallback` On it.**
  
 Just like this :
 ```
@@ -121,7 +126,9 @@ public class XX {
 >
 > **注意**, 一般情况下项目中受Sentinel保护的代码应该只占整体代码的一部分, 不应该一刀切的将所有的代码打上注解。
 
- **<font color='red'>E</font>. a dashboard is in need.**
+---
+
+**<font color='red'>E</font>. A dashboard is in need.**
  
  > **Notice**, you can changed this by your self.
  >
