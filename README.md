@@ -1,5 +1,5 @@
 # About Me(前言)
-This is the SDK(`yuan-sdk`) for [Alibaba Sentinel](https://github.com/alibaba/Sentinel)， Make the accessing easier.
+This is the SDK(`yuan-sdk`)、Quick Start for [Alibaba Sentinel](https://github.com/alibaba/Sentinel)， Make the accessing easier.
 
 Before reading or using `yuan-sdk`, you should skilled use Sentinel;
 
