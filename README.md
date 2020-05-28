@@ -73,7 +73,7 @@ mvn clean source:jar deploy
 compile 'com.ke.yuan:yuan-sdk:0.10.1'
 annotationProcessor "com.ke.yuan:yuan-sdk:0.10.1"
 ```
-**Notice**， `yuan-sdk` works on compile, you mush stay is on you classpath when you compile your project.
+**Notice**， `yuan-sdk` works on compile, you mush stay `yuan-sdk` on you classpath when you compile your project.
 
 **<font color='red'>C</font>. point annotation on your class、method.**
 
