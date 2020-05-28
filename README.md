@@ -1,7 +1,12 @@
 # About Me(前言)
-This is the SDK(`yuan-sdk`)、Quick Start for [Alibaba Sentinel](https://github.com/alibaba/Sentinel)， Make the accessing easier.
+This is the **SDK(`yuan-sdk`)、Quick Start** for [Alibaba Sentinel](https://github.com/alibaba/Sentinel), Make the accessing easier.
 
 Before reading or using `yuan-sdk`, you should skilled use Sentinel;
+
+ - You can easy access Sentinel by reading part [How To Access(如何接入)](#How To Access(如何接入)), 
+ - You may know how we work at [What Did We Do(技术原理)](#What Did We Do(技术原理)),
+ - Do something on me? This part: [How to rewrite me(如果修改你期望的功能)](#How to rewrite me(如果修改你期望的功能))
+ - Some Q&A: [Something you didnt understand(一些Q&A)](#Something you didnt understand(一些Q&A))
 
 In [traditional accessing](https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D#quick-start), you 
 may coupling Sentinel's functionality into your logic, such as:
