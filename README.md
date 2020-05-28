@@ -217,7 +217,7 @@ public class HelloWorldLimitDemo {
 }
 ```
 
-## mark a entrance for yuan_sdk 给Sentinel留一个入口
+## mark a entrance for yuan 给Sentinel留一个入口
 > for properties setting, this can be anywhere that can be executed, we make it in the main class.
 > 入口的主要用处是配置一些Sentinel需要用到的参数, 并非必须的, 可以在代码中硬编码植入. 但是直接在入口处植入, 使用 sentinel-dashboard会非常方便.
 
@@ -328,7 +328,7 @@ read this one: `com.ke.yuan.io.SentinelProperties`, and mark your properties rea
  
  So its easy:
  
-  1. Remove the annotation `@EnableSpringYuAn` OR `@EnableYuAn` on your entrance(**mark-a-entrance-for-yuan_sdk-给Sentinel留一个入口**).
+  1. Remove the annotation `@EnableSpringYuAn` OR `@EnableYuAn` on your [entrance](mark-a-entrance-for-yuan-给sentinel留一个入口).
   2. Ensure the rule can be read by `yuan-sdk`/Sentinel
   
 ## Introduce point(关键类介绍)
