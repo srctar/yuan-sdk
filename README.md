@@ -309,8 +309,7 @@ Target：
 ## Before do something (内置的一些功能)
 
 `yuan-sdk` offered some feature by myself, you can active it by `properties`,
-`yuan-sdk` 本身自带了一些控制参数， 也支持[Sentinel 支持的参数](https://github
-.com/alibaba/Sentinel/wiki/%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE%E9%A1%B9), 你只需要保证进程可以读取到他们即可。
+`yuan-sdk` 本身自带了一些控制参数， 也支持[Sentinel 支持的参数](https://github.com/alibaba/Sentinel/wiki/%E5%90%AF%E5%8A%A8%E9%85%8D%E7%BD%AE%E9%A1%B9), 你只需要保证进程可以读取到他们即可。
 
 read this one: `com.ke.yuan.io.SentinelProperties`, and mark your properties readable in you environment:
 
@@ -329,7 +328,7 @@ read this one: `com.ke.yuan.io.SentinelProperties`, and mark your properties rea
  
  So its easy:
  
-  1. Remove the annotation `@EnableSpringYuAn` OR `@EnableYuAn` on your [main class](#mark-a-entrance-for-yuan-sdk-(给Sentinel留一个入口)).
+  1. Remove the annotation `@EnableSpringYuAn` OR `@EnableYuAn` on your [entrance class](#mark a entrance for yuan-sdk(给Sentinel留一个入口)).
   2. Ensure the rule can be read by `yuan-sdk`/Sentinel
   
 ## Introduce point(关键类介绍)
