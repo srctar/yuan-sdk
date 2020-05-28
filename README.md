@@ -6,7 +6,7 @@ Before reading or using `yuan-sdk`, you should skilled use Sentinel;
  - You can easy access Sentinel by reading part [How To Access(如何接入)](#how-to-access-如何接入), 
  - You may know how we work at [What Did We Do(技术原理)](#what-did-we-do-技术原理),
  - Do something on me? This part: [How to rewrite me(如果修改你期望的功能)](#how-to-rewrite-me-如果修改你期望的功能)
- - Some Q&A: [Something you didnt understand(一些Q&A)](#something-you-didnt-understand-一些Q&A)
+ - Some Q&A: [Something you didnt understand(一些Q&A)](#something-you-didnt-understand-一些问题和解决方案)
 
 In [traditional accessing](https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D#quick-start), you 
 may coupling Sentinel's functionality into your logic, such as:
@@ -217,7 +217,7 @@ public class HelloWorldLimitDemo {
 }
 ```
 
-## mark a entrance for yuan-sdk(给Sentinel留一个入口)
+## mark a entrance for yuan_sdk 给Sentinel留一个入口
 > for properties setting, this can be anywhere that can be executed, we make it in the main class.
 > 入口的主要用处是配置一些Sentinel需要用到的参数, 并非必须的, 可以在代码中硬编码植入. 但是直接在入口处植入, 使用 sentinel-dashboard会非常方便.
 
@@ -328,7 +328,7 @@ read this one: `com.ke.yuan.io.SentinelProperties`, and mark your properties rea
  
  So its easy:
  
-  1. Remove the annotation `@EnableSpringYuAn` OR `@EnableYuAn` on your entrance(**mark a entrance for yuan-sdk(给Sentinel留一个入口)**).
+  1. Remove the annotation `@EnableSpringYuAn` OR `@EnableYuAn` on your entrance(**mark-a-entrance-for-yuan_sdk-给Sentinel留一个入口**).
   2. Ensure the rule can be read by `yuan-sdk`/Sentinel
   
 ## Introduce point(关键类介绍)
@@ -349,7 +349,7 @@ read this one: `com.ke.yuan.io.SentinelProperties`, and mark your properties rea
 for other, look at this flow(may help rewrite code):
 ![流程图](http://img.ljcdn.com/alliance-crm-image/72660e09-157d-4389-a22a-ec788434e6d4.jpg)
 
-# Something you didnt understand 一些Q&A
+# Something you didnt understand 一些问题和解决方案
 ## You are using config center(Spring)
 > such as apollo or another config center.
 > `yuan-sdk` use `PropertySourcesPlaceholderConfigurer` for properties getting(Spring),
