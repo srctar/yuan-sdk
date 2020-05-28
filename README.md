@@ -3,10 +3,10 @@ This is the **SDK(`yuan-sdk`)、Quick Start** for [Alibaba Sentinel](https://git
 
 Before reading or using `yuan-sdk`, you should skilled use Sentinel;
 
- - You can easy access Sentinel by reading part [How To Access(如何接入)](#how-to-access【如何接入】), 
- - You may know how we work at [What Did We Do(技术原理)](#What-Did-We-Do【技术原理】),
- - Do something on me? This part: [How to rewrite me(如果修改你期望的功能)](#How to rewrite me【如果修改你期望的功能】)
- - Some Q&A: [Something you didnt understand(一些Q&A)](#Something you didnt understand【一些Q&A】)
+ - You can easy access Sentinel by reading part [How To Access(如何接入)](#how-to-access-如何接入), 
+ - You may know how we work at [What Did We Do(技术原理)](#what-did-we-do-技术原理),
+ - Do something on me? This part: [How to rewrite me(如果修改你期望的功能)](#how-to-rewrite-me-如果修改你期望的功能)
+ - Some Q&A: [Something you didnt understand(一些Q&A)](#something-you-didnt-understand-一些Q&A)
 
 In [traditional accessing](https://github.com/alibaba/Sentinel/wiki/%E4%BB%8B%E7%BB%8D#quick-start), you 
 may coupling Sentinel's functionality into your logic, such as:
@@ -45,7 +45,7 @@ its name is `yuan-sdk`(**THIS PROJECT**)
  
  > 你在使用本组件`yuan-sdk`的时候, 需对Sentinel有一定的了解, 知道它的使用方式。
 
-# How To Access【如何接入】
+# How To Access 如何接入
 ## Notice (说明)
 `yuan-sdk` is only for accessing easier, how to use, belong to [wiki](https://github.com/alibaba/Sentinel/wiki)
 
@@ -152,7 +152,7 @@ public class XX {
   目前是必须的, 可以写在一个名为`sentinel_yuan_sdk.properties`的文件里, 如果是Spring环境, 可以写在远端
   配置中心、yaml、任意properties文件里.
   
-# What Did We Do【技术原理】
+# What Did We Do 技术原理
   
 > we planed java agent、AOP、AspectJ, at last, we select JSR269: Java `Annotation Processor`
 
@@ -305,7 +305,7 @@ Target：
 **B. look for `com.ke.yuan.YuAnVersion`**
 > 功能点都在这个类里面有描述, 例如清除日志、异常回调、指定日志文件夹等.
 
-# How to rewrite me【如果修改你期望的功能】
+# How to rewrite me 如果修改你期望的功能
 ## Before do something (内置的一些功能)
 
 `yuan-sdk` offered some feature by myself, you can active it by `properties`,
@@ -349,7 +349,7 @@ read this one: `com.ke.yuan.io.SentinelProperties`, and mark your properties rea
 for other, look at this flow(may help rewrite code):
 ![流程图](http://img.ljcdn.com/alliance-crm-image/72660e09-157d-4389-a22a-ec788434e6d4.jpg)
 
-# Something you didnt understand【一些Q&A】
+# Something you didnt understand 一些Q&A
 ## You are using config center(Spring)
 > such as apollo or another config center.
 > `yuan-sdk` use `PropertySourcesPlaceholderConfigurer` for properties getting(Spring),
