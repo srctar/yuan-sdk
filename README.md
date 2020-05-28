@@ -65,6 +65,8 @@ OR
 mvn clean source:jar deploy
 ```
 
+here is [release 0.10.1](https://github.com/srctar/yuan-sdk/releases/download/0.10.1/yuan-sdk-0.10.1.jar), **only use for have a look at how is compiles(may not work)**
+
 ---
 
 **<font color='red'>B</font>. Import `yuan-sdk` into your project, or copy it into your classpath.**
@@ -104,7 +106,7 @@ public class Main {
  included into you Spring scan package.
  - if you are in a Spring Boot environment, use `@EnableSpringYuAn` On you main class
  ```
-@EnableYuan
+@EnableSpringYuAn
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) {
